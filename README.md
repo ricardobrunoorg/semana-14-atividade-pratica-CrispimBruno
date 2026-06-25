@@ -10,15 +10,20 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Crispim Bruno Da Silva Junior
+- Matricula: 923833
+- Proposta de projeto escolhida: Chart.js
 - Breve descrição sobre seu projeto:
 
-**Print da tela com a implementação**
+o projeto como um todo é uma livraria online (LibroShop), onde o cliente pode selecionar, ver uma descrição, ver valores, é possível adicionar livros e agora, olhar as estatisticas gerais do site.
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+-aba de estatisticas no header-
+![alt text](image.png)
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+Nessa etapa adicionei uma aba de estaticas que lê os dados do json e, com base nelas, gera um gráfico de valores. No caso foram 5 gráficos, 3 de linha e 2 de pizza, separdos por valor, genero, avaliação...
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)

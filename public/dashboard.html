@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estatísticas do Acervo — LibroShop</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">LibroShop</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Acervo</a>
+        <a href="cadastro_livros.html" class="nav-link">Cadastrar livro</a>
+        <a href="dashboard.html" class="nav-link active">Estatísticas</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="dashboard-hero">
+    <div class="dashboard-hero-inner">
+      <p class="dashboard-eyebrow">Visão geral do acervo</p>
+      <h1 class="dashboard-titulo">Dados do<br /><em>acervo</em></h1>
+      <p class="dashboard-sub">Gráficos gerados em tempo real.</p>
+    </div>
+  </section>
+
+  <section class="kpi-section">
+    <div class="container">
+      <div id="kpi-grid" class="kpi-grid">
+        <div class="kpi-item"><span class="kpi-label">Total de livros</span><span class="kpi-valor" id="kpi-total">—</span></div>
+        <div class="kpi-item"><span class="kpi-label">Em destaque</span><span class="kpi-valor" id="kpi-destaque">—</span></div>
+        <div class="kpi-item"><span class="kpi-label">Preço médio</span><span class="kpi-valor" id="kpi-preco">—</span></div>
+        <div class="kpi-item"><span class="kpi-label">Avaliação média</span><span class="kpi-valor" id="kpi-avaliacao">—</span></div>
+        <div class="kpi-item"><span class="kpi-label">Total em estoque</span><span class="kpi-valor" id="kpi-estoque">—</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="charts-section">
+    <div class="container">
+
+      <div id="dash-loading" class="dash-loading">
+        <div class="spinner"></div>
+        <p>Carregando dados...</p>
+      </div>
+
+      <div id="charts-grid" class="charts-grid hidden">
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2 class="chart-titulo">Livros por categoria</h2>
+            <p class="chart-sub">Quantidade de títulos em cada categoria</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="chart-categorias"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2 class="chart-titulo">Estoque por categoria</h2>
+            <p class="chart-sub">Total de unidades disponíveis em cada categoria</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="chart-estoque"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card wide">
+          <div class="chart-header">
+            <h2 class="chart-titulo">Avaliação por livro</h2>
+            <p class="chart-sub">Nota média de cada título no acervo</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="chart-avaliacoes"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2 class="chart-titulo">Faixa de preços</h2>
+            <p class="chart-sub">Distribuição dos livros por faixa de preço</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="chart-precos"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h2 class="chart-titulo">Destaques vs acervo geral</h2>
+            <p class="chart-sub">Proporção de livros marcados como destaque</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="chart-destaques"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 LibroShop — Projeto acadêmico com JSON Server</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/dashboard.js"></script>
+</body>
+</html>

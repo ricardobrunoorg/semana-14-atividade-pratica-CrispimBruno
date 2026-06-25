@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
@@ -19,25 +20,32 @@
       <nav class="header-nav">
         <a href="index.html" class="nav-link">Acervo</a>
         <a href="cadastro_livros.html" class="nav-link">Cadastrar Livro</a>
+        <a href="dashboard.html" class="nav-link">Estatísticas</a>
       </nav>
     </div>
   </header>
+
   <div class="breadcrumb-bar">
     <div class="container">
       <a href="index.html" class="breadcrumb-link">← Voltar ao acervo</a>
     </div>
   </div>
+
   <main class="main-content">
     <div class="container">
+
       <div id="loading" class="loading-state">
         <div class="spinner"></div>
         <p>Carregando detalhes...</p>
       </div>
+
       <div id="error-message" class="error-state hidden"></div>
+
       <div id="detail-container" class="hidden"></div>
 
     </div>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 LibroShop — Projeto acadêmico com JSON Server</p>
