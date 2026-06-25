@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibroShop — Livraria Online</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">LibroShop</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">Acervo</a>
+        <a href="cadastro_livros.html" class="nav-link">Cadastrar Livro</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Curadoria de grandes obras</p>
+      <h1 class="hero-title">Clássicos que<br /><em>transformam</em></h1>
+      <p class="hero-sub">De Tolkien a Guimarães Rosa — descubra os livros que definiram a literatura.</p>
+    </div>
+    <div class="hero-accent" aria-hidden="true"></div>
+  </section>
+  <section class="filters-section">
+    <div class="container">
+      <div class="filters-bar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="Fantasia">Fantasia</button>
+        <button class="filter-btn" data-filter="Ficção Científica">Ficção Científica</button>
+        <button class="filter-btn" data-filter="Distopia">Distopia</button>
+        <button class="filter-btn" data-filter="Literatura Clássica">Lit. Clássica</button>
+        <button class="filter-btn" data-filter="Literatura Latino-americana">Lit. Latino-americana</button>
+      </div>
+    </div>
+  </section>
+  <main class="main-content">
+    <div class="container">
+      <div id="loading" class="loading-state">
+        <div class="spinner"></div>
+        <p>Carregando o acervo...</p>
+      </div>
+      <div id="error-message" class="error-state hidden">
+        <p>⚠️ Não foi possível carregar os livros. Verifique se o JSON Server está rodando em <code>http://localhost:3000</code>.</p>
+      </div>
+      <ul id="cards-container" class="cards-grid" aria-label="Lista de livros"></ul>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 LibroShop — Projeto acadêmico com JSON Server</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>

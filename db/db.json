@@ -1,18 +1,378 @@
 {
-  "usuarios": [
+  "livros": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "titulo": "O Senhor dos Anéis",
+      "autor": "J.R.R. Tolkien",
+      "descricaoCurta": "A épica jornada de Frodo e seus companheiros para destruir o Um Anel.",
+      "descricaoCompleta": "Em uma terra chamada Terra-média, o hobbit Frodo Bolseiro herda um anel mágico de seu tio Bilbo. Ele logo descobre que este é o Um Anel, forjado pelo Senhor das Trevas Sauron para dominar todos os outros anéis de poder. Com a ajuda de seus amigos e da Sociedade do Anel, Frodo embarca em uma perigosa missão para destruir o anel nas chamas da Montanha da Perdição, único lugar onde pode ser desfeito.",
+      "imagem": "https://covers.openlibrary.org/b/id/8743161-L.jpg",
+      "categoria": "Fantasia",
+      "preco": 89.9,
+      "avaliacao": 4.9,
+      "paginas": 1178,
+      "editora": "HarperCollins",
+      "anoPublicacao": 1954,
+      "tags": [
+        "fantasia",
+        "épico",
+        "aventura",
+        "clássico",
+        "tolkien"
+      ],
+      "destaque": true,
+      "estoque": 15
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "titulo": "Duna",
+      "autor": "Frank Herbert",
+      "descricaoCurta": "A saga de Paul Atreides no deserto do planeta Arrakis, lar da especiaria mais valiosa do universo.",
+      "descricaoCompleta": "Duna narra a história de Paul Atreides, herdeiro de uma família nobre que aceita o controle do planeta deserto Arrakis, único produtor da especiaria 'melange', a substância mais valiosa do universo. Quando a família Atreides é traída, Paul se refugia nos desertos com os Fremen, o povo nativo, e gradualmente assume o papel de líder messiânico. Um retrato profundo sobre política, religião, ecologia e poder.",
+      "imagem": "https://covers.openlibrary.org/b/id/8225260-L.jpg",
+      "categoria": "Ficção Científica",
+      "preco": 74.9,
+      "avaliacao": 4.8,
+      "paginas": 688,
+      "editora": "Aleph",
+      "anoPublicacao": 1965,
+      "tags": [
+        "ficção científica",
+        "política",
+        "ecologia",
+        "clássico",
+        "aventura"
+      ],
+      "destaque": true,
+      "estoque": 8
+    },
+    {
+      "id": "3",
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "descricaoCurta": "Uma distopia aterrorizante sobre um regime totalitário que controla cada aspecto da vida humana.",
+      "descricaoCompleta": "Em um futuro distópico, Winston Smith vive na Oceânia sob o regime opressivo do Partido liderado pelo misterioso Grande Irmão. Toda a vida é monitorada, o passado é reescrito e o pensamento independente é crime. Winston começa a nutrir sentimentos proibidos de rebeldia e amor, desafiando o sistema em uma jornada que explora os limites da liberdade, da verdade e da resistência humana.",
+      "imagem": "https://covers.openlibrary.org/b/id/8575708-L.jpg",
+      "categoria": "Distopia",
+      "preco": 49.9,
+      "avaliacao": 4.8,
+      "paginas": 336,
+      "editora": "Companhia das Letras",
+      "anoPublicacao": 1949,
+      "tags": [
+        "distopia",
+        "política",
+        "clássico",
+        "orwell",
+        "totalitarismo"
+      ],
+      "destaque": true,
+      "estoque": 22
+    },
+    {
+      "id": "4",
+      "titulo": "Cem Anos de Solidão",
+      "autor": "Gabriel García Márquez",
+      "descricaoCurta": "A saga mágica e melancólica da família Buendía ao longo de sete gerações em Macondo.",
+      "descricaoCompleta": "Considerado o maior romance em língua espanhola, Cem Anos de Solidão conta a história da família Buendía e da cidade mítica de Macondo ao longo de cem anos. García Márquez usa o realismo mágico para entrelaçar amor, guerra, solidão e destino em uma narrativa hipnótica que mistura o cotidiano com o sobrenatural de forma absolutamente natural.",
+      "imagem": "https://covers.openlibrary.org/b/id/8258318-L.jpg",
+      "categoria": "Literatura Latino-americana",
+      "preco": 64.9,
+      "avaliacao": 4.7,
+      "paginas": 448,
+      "editora": "Record",
+      "anoPublicacao": 1967,
+      "tags": [
+        "realismo mágico",
+        "clássico",
+        "família",
+        "colombia",
+        "nobel"
+      ],
+      "destaque": false,
+      "estoque": 10
+    },
+    {
+      "id": "5",
+      "titulo": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "descricaoCurta": "A aventura inesperada do hobbit Bilbo Bolseiro em busca de um tesouro guardado por um dragão.",
+      "descricaoCompleta": "Bilbo Bolseiro leva uma vida tranquila até que o mago Gandalf e treze anões aparecem em sua porta com uma proposta de aventura. Juntos, eles partem em busca do tesouro guardado pelo terrível dragão Smaug na Montanha Solitária. Uma história de coragem, amizade e autodescoberta que é tanto uma aventura emocionante quanto uma jornada de crescimento pessoal.",
+      "imagem": "https://covers.openlibrary.org/b/id/8406786-L.jpg",
+      "categoria": "Fantasia",
+      "preco": 54.9,
+      "avaliacao": 4.8,
+      "paginas": 310,
+      "editora": "HarperCollins",
+      "anoPublicacao": 1937,
+      "tags": [
+        "fantasia",
+        "aventura",
+        "tolkien",
+        "clássico",
+        "dragão"
+      ],
+      "destaque": false,
+      "estoque": 18
+    },
+    {
+      "id": "6",
+      "titulo": "Fundação",
+      "autor": "Isaac Asimov",
+      "descricaoCurta": "Um cientista prevê o colapso do Império Galáctico e planeja preservar o conhecimento humano.",
+      "descricaoCompleta": "Hari Seldon, matemático e psicohistoriador, usa equações complexas para prever o colapso do Império Galáctico e o início de uma era de trevas que duraria 30 mil anos. Para encurtar esse período, ele estabelece a Fundação, um repositório de todo conhecimento humano. A série acompanha séculos de conflitos, política e ciência em uma das obras mais influentes da ficção científica.",
+      "imagem": "https://covers.openlibrary.org/b/id/9255566-L.jpg",
+      "categoria": "Ficção Científica",
+      "preco": 59.9,
+      "avaliacao": 4.7,
+      "paginas": 256,
+      "editora": "Aleph",
+      "anoPublicacao": 1951,
+      "tags": [
+        "ficção científica",
+        "asimov",
+        "império",
+        "clássico",
+        "ciência"
+      ],
+      "destaque": false,
+      "estoque": 12
+    },
+    {
+      "id": "7",
+      "titulo": "A Revolução dos Bichos",
+      "autor": "George Orwell",
+      "descricaoCurta": "Uma fábula política em que animais de uma fazenda se rebelam contra seus donos humanos.",
+      "descricaoCompleta": "Na Granja Manor, os animais se rebelam contra o fazendeiro Mr. Jones e estabelecem uma sociedade igualitária guiada pelos princípios do Animalismo. Com o tempo, os porcos assumem o controle e começam a replicar os mesmos abusos dos humanos. Uma crítica mordaz aos regimes totalitários e à corrupção do poder, disfarçada de fábula acessível a todos os públicos.",
+      "imagem": "https://covers.openlibrary.org/b/id/9264578-L.jpg",
+      "categoria": "Distopia",
+      "preco": 39.9,
+      "avaliacao": 4.6,
+      "paginas": 152,
+      "editora": "Companhia das Letras",
+      "anoPublicacao": 1945,
+      "tags": [
+        "fábula",
+        "política",
+        "orwell",
+        "clássico",
+        "distopia"
+      ],
+      "destaque": false,
+      "estoque": 30
+    },
+    {
+      "id": "8",
+      "titulo": "Dom Quixote",
+      "autor": "Miguel de Cervantes",
+      "descricaoCurta": "As aventuras do cavaleiro errante Dom Quixote e seu fiel escudeiro Sancho Pança.",
+      "descricaoCompleta": "Considerado o primeiro romance moderno, Dom Quixote narra as aventuras de Alonso Quijano, um fidalgo espanhol que enlouquece lendo livros de cavalaria e decide se tornar um cavaleiro andante com o nome de Dom Quixote de la Mancha. Acompanhado de seu escudeiro Sancho Pança, enfrenta moinhos de vento que imagina serem gigantes e busca realizar feitos heroicos em nome de sua amada Dulcineia.",
+      "imagem": "https://covers.openlibrary.org/b/id/12793978-L.jpg",
+      "categoria": "Literatura Clássica",
+      "preco": 79.9,
+      "avaliacao": 4.5,
+      "paginas": 1072,
+      "editora": "Penguin",
+      "anoPublicacao": 1605,
+      "tags": [
+        "clássico",
+        "espanhol",
+        "aventura",
+        "comédia",
+        "cavalaria"
+      ],
+      "destaque": false,
+      "estoque": 7
+    },
+    {
+      "id": "9",
+      "titulo": "Neuromancer",
+      "autor": "William Gibson",
+      "descricaoCurta": "O hacker Case é contratado para uma última missão no ciberespaço que mudará o mundo.",
+      "descricaoCompleta": "Case é um hacker que teve suas habilidades destruídas por ex-patrões como punição. Quando uma misteriosa figura o contrata para uma última missão no ciberespaço — a realidade virtual onde a informação flui livremente — ele tem a chance de se redimir. Neuromancer inventou o cyberpunk e cunhou o conceito de 'ciberespaço', influenciando décadas de ficção científica e a cultura digital moderna.",
+      "imagem": "https://covers.openlibrary.org/b/id/8085867-L.jpg",
+      "categoria": "Ficção Científica",
+      "preco": 54.9,
+      "avaliacao": 4.5,
+      "paginas": 288,
+      "editora": "Aleph",
+      "anoPublicacao": 1984,
+      "tags": [
+        "cyberpunk",
+        "hacker",
+        "ficção científica",
+        "gibson",
+        "tecnologia"
+      ],
+      "destaque": false,
+      "estoque": 9
+    },
+    {
+      "id": "10",
+      "titulo": "O Nome da Rosa",
+      "autor": "Umberto Eco",
+      "descricaoCurta": "Um monge franciscano investiga uma série de mortes misteriosas em uma abadia medieval.",
+      "descricaoCompleta": "Na Itália do século XIV, o monge franciscano Guilherme de Baskerville e seu noviço Adso chegam a uma abadia beneditina para investigar uma série de mortes misteriosas. O que começa como uma investigação policial revela-se uma teia de segredos teológicos, jogos de poder e um livro proibido. Um magistral romance histórico e policial que é também uma meditação sobre o conhecimento, a verdade e o poder.",
+      "imagem": "https://covers.openlibrary.org/b/id/8301671-L.jpg",
+      "categoria": "Literatura Clássica",
+      "preco": 69.9,
+      "avaliacao": 4.7,
+      "paginas": 560,
+      "editora": "Record",
+      "anoPublicacao": 1980,
+      "tags": [
+        "histórico",
+        "policial",
+        "medieval",
+        "eco",
+        "mistério"
+      ],
+      "destaque": true,
+      "estoque": 6
+    },
+    {
+      "id": "11",
+      "titulo": "Brave New World",
+      "autor": "Aldous Huxley",
+      "descricaoCurta": "Uma sociedade futura onde a felicidade é garantida pelo condicionamento e pelo controle total.",
+      "descricaoCompleta": "Em um futuro distante, a humanidade é reproduzida artificialmente e condicionada desde antes do nascimento para ocupar um papel fixo na sociedade. A felicidade é garantida por drogas e entretenimento. Bernard Marx é o único que questiona essa ordem perfeita. Admirável Mundo Novo é uma das distopias mais relevantes da literatura, cada vez mais atual na era da tecnologia e do consumismo.",
+      "imagem": "https://covers.openlibrary.org/b/id/8116592-L.jpg",
+      "categoria": "Distopia",
+      "preco": 49.9,
+      "avaliacao": 4.6,
+      "paginas": 311,
+      "editora": "Globo Livros",
+      "anoPublicacao": 1932,
+      "tags": [
+        "distopia",
+        "huxley",
+        "clássico",
+        "futuro",
+        "sociedade"
+      ],
+      "destaque": false,
+      "estoque": 14
+    },
+    {
+      "id": "12",
+      "titulo": "Grande Sertão: Veredas",
+      "autor": "João Guimarães Rosa",
+      "descricaoCurta": "O jagunço Riobaldo narra sua vida de violência e amor no sertão mineiro ao longo de décadas.",
+      "descricaoCompleta": "Considerado o maior romance da literatura brasileira, Grande Sertão: Veredas é o monólogo do ex-jagunço Riobaldo, que relata sua vida no sertão do Brasil central para um interlocutor silencioso. Através de uma prosa revolucionária que mistura neologismos, arcaísmos e a oralidade sertaneja, Guimarães Rosa constrói uma obra sobre amizade, amor proibido, violência, e a dúvida fundamental: o diabo existe?",
+      "imagem": "https://covers.openlibrary.org/b/id/10519834-L.jpg",
+      "categoria": "Literatura Latino-americana",
+      "preco": 69.9,
+      "avaliacao": 4.6,
+      "paginas": 624,
+      "editora": "Nova Fronteira",
+      "anoPublicacao": 1956,
+      "tags": [
+        "brasil",
+        "sertão",
+        "guimarães rosa",
+        "clássico",
+        "jagunço"
+      ],
+      "destaque": true,
+      "estoque": 5
     }
-  ]
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Fantasia",
+      "slug": "fantasia",
+      "icone": "🧙",
+      "descricao": "Mundos mágicos, criaturas fantásticas e aventuras épicas"
+    },
+    {
+      "id": "2",
+      "nome": "Ficção Científica",
+      "slug": "ficcao-cientifica",
+      "icone": "🚀",
+      "descricao": "Tecnologia, espaço e futuros possíveis"
+    },
+    {
+      "id": "3",
+      "nome": "Distopia",
+      "slug": "distopia",
+      "icone": "🏚️",
+      "descricao": "Sociedades sombrias e futuros sombrios"
+    },
+    {
+      "id": "4",
+      "nome": "Literatura Clássica",
+      "slug": "literatura-classica",
+      "icone": "📜",
+      "descricao": "Obras fundamentais da tradição literária ocidental"
+    },
+    {
+      "id": "5",
+      "nome": "Literatura Latino-americana",
+      "slug": "literatura-latino-americana",
+      "icone": "🌿",
+      "descricao": "Vozes do realismo mágico e da identidade latino-americana"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": "1",
+      "livroId": 1,
+      "usuario": "MariaS",
+      "nota": 5,
+      "comentario": "Leitura obrigatória para qualquer amante de fantasia!",
+      "data": "2024-11-10"
+    },
+    {
+      "id": "2",
+      "livroId": 1,
+      "usuario": "JoãoP",
+      "nota": 5,
+      "comentario": "Uma obra monumental. Tolkien criou um mundo incrível.",
+      "data": "2024-12-03"
+    },
+    {
+      "id": "3",
+      "livroId": 2,
+      "usuario": "AnaB",
+      "nota": 5,
+      "comentario": "Impressionante como é atual mesmo sendo de 1965.",
+      "data": "2025-01-15"
+    },
+    {
+      "id": "4",
+      "livroId": 3,
+      "usuario": "CarlosM",
+      "nota": 5,
+      "comentario": "Assustadoramente relevante nos dias de hoje.",
+      "data": "2025-02-20"
+    },
+    {
+      "id": "5",
+      "livroId": 10,
+      "usuario": "BeatrizF",
+      "nota": 5,
+      "comentario": "Umberto Eco é genial. Li três vezes.",
+      "data": "2025-03-05"
+    }
+  ],
+  "favoritos": [
+    {
+      "id": "1",
+      "livroId": 1
+    },
+    {
+      "id": "2",
+      "livroId": 3
+    },
+    {
+      "id": "3",
+      "livroId": 10
+    },
+    {
+      "id": "4",
+      "livroId": 12
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

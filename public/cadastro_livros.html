@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Livro — LibroShop</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">LibroShop</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Acervo</a>
+        <a href="cadastro_livros.html" class="nav-link active">Cadastrar Livro</a>
+      </nav>
+    </div>
+  </header>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <a href="index.html" class="breadcrumb-link">← Voltar ao acervo</a>
+    </div>
+  </div>
+  <main class="main-content">
+    <div class="container">
+      <div class="form-wrapper">
+        <h1 class="form-titulo">Cadastrar novo livro</h1>
+        <p class="form-sub">Preencha os campos abaixo para adicionar um livro ao acervo da LibroShop.</p>
+
+        <div id="form-feedback" class="hidden"></div>
+
+        <form id="form-livro" class="cadastro-form" novalidate>
+
+          <div class="form-group">
+            <label for="titulo">Título *</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ex.: O Senhor dos Anéis" required />
+          </div>
+
+          <div class="form-group">
+            <label for="autor">Autor *</label>
+            <input type="text" id="autor" name="autor" placeholder="Ex.: J.R.R. Tolkien" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="categoria">Categoria *</label>
+              <select id="categoria" name="categoria" required>
+                <option value="">Selecione...</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Ficção Científica">Ficção Científica</option>
+                <option value="Distopia">Distopia</option>
+                <option value="Literatura Clássica">Literatura Clássica</option>
+                <option value="Literatura Latino-americana">Literatura Latino-americana</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preco">Preço (R$) *</label>
+              <input type="number" id="preco" name="preco" placeholder="Ex.: 59.90" step="0.01" min="0" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="descricaoCurta">Descrição curta *</label>
+            <input type="text" id="descricaoCurta" name="descricaoCurta" maxlength="150"
+              placeholder="Resumo breve para exibição no card (máx. 150 caracteres)" required />
+          </div>
+
+          <div class="form-group">
+            <label for="descricaoCompleta">Descrição completa *</label>
+            <textarea id="descricaoCompleta" name="descricaoCompleta" rows="5"
+              placeholder="Descrição detalhada do livro para a página de detalhes" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="imagem">URL da capa</label>
+            <input type="url" id="imagem" name="imagem" placeholder="https://exemplo.com/capa.jpg" />
+            <small>Deixe em branco para usar a capa padrão.</small>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="editora">Editora</label>
+              <input type="text" id="editora" name="editora" placeholder="Ex.: Companhia das Letras" />
+            </div>
+            <div class="form-group">
+              <label for="anoPublicacao">Ano de publicação</label>
+              <input type="number" id="anoPublicacao" name="anoPublicacao" placeholder="Ex.: 1954" min="1000" max="2099" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="paginas">Número de páginas</label>
+              <input type="number" id="paginas" name="paginas" placeholder="Ex.: 350" min="1" />
+            </div>
+            <div class="form-group">
+              <label for="estoque">Quantidade em estoque</label>
+              <input type="number" id="estoque" name="estoque" placeholder="Ex.: 10" min="0" value="0" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tags">Tags (separadas por vírgula)</label>
+            <input type="text" id="tags" name="tags" placeholder="Ex.: fantasia, aventura, épico" />
+          </div>
+
+          <div class="form-group form-group-check">
+            <label class="check-label">
+              <input type="checkbox" id="destaque" name="destaque" />
+              <span>Marcar como livro em destaque</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-cancelar" onclick="window.location.href='index.html'">
+              Cancelar
+            </button>
+            <button type="submit" class="btn-salvar">
+              Salvar livro
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 LibroShop — Projeto acadêmico com JSON Server</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/cadastro_livros.js"></script>
+</body>
+</html>
